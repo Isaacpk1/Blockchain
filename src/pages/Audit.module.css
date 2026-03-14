@@ -1,0 +1,122 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legendText {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.controls {
+  margin-bottom: 0.5rem;
+}
+
+.controls label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.controls select {
+  padding: 0.4rem 0.6rem;
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.empty {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.timeline {
+  list-style: none;
+}
+
+.event {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--chain-border);
+}
+
+.eventHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.eventTime {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.eventPayload {
+  font-size: 0.85rem;
+  margin: 0.5rem 0;
+}
+
+.payloadRow {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.payloadKey {
+  color: var(--text-muted);
+  min-width: 120px;
+}
+
+.payloadVal {
+  word-break: break-all;
+}
+
+.eventHash {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+.eventHash code {
+  font-family: var(--font-mono);
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+.vaultNote {
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.vaultNote p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}

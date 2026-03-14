@@ -1,0 +1,57 @@
+.wrapper {
+  padding: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.heading {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.flow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.step {
+  padding: 0.6rem 0.9rem;
+  background: var(--bg-elevated);
+  border-radius: 8px;
+  border: 1px dashed var(--border);
+}
+
+.stepLabel {
+  display: block;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.stepDesc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.arrow {
+  color: var(--text-muted);
+  font-size: 1.2rem;
+}
+
+.box {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  max-width: 280px;
+}
+
+.box p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+  line-height: 1.4;
+}

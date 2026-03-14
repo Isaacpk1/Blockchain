@@ -1,0 +1,119 @@
+:root {
+  /* Segurança / médico */
+  --bg-dark: #0d1117;
+  --bg-card: #161b22;
+  --bg-elevated: #21262d;
+  --border: #30363d;
+  --text: #e6edf3;
+  --text-muted: #8b949e;
+  --accent: #238636;
+  --accent-hover: #2ea043;
+  --warning: #d29922;
+  --danger: #f85149;
+  --info: #58a6ff;
+  /* Off-chain = Data Vault */
+  --vault-bg: #0d1b2a;
+  --vault-border: #1b263b;
+  --vault-accent: #415a77;
+  /* On-chain = Blockchain */
+  --chain-bg: #1a0a2e;
+  --chain-border: #2d1b4e;
+  --chain-accent: #7c3aed;
+  --chain-glow: rgba(124, 58, 237, 0.2);
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-dark);
+  color: var(--text);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+input, select, textarea {
+  font-family: var(--font-sans);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text);
+  padding: 0.6rem 0.9rem;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(35, 134, 54, 0.2);
+}
+
+a {
+  color: var(--info);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Badges on-chain / off-chain */
+.badge-vault {
+  background: var(--vault-bg);
+  border: 1px solid var(--vault-border);
+  color: #778da9;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+.badge-chain {
+  background: var(--chain-bg);
+  border: 1px solid var(--chain-border);
+  color: #a78bfa;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+.section-vault {
+  background: linear-gradient(135deg, var(--vault-bg) 0%, #0d1520 100%);
+  border: 1px solid var(--vault-border);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+
+.section-chain {
+  background: linear-gradient(135deg, var(--chain-bg) 0%, #0f0a1a 100%);
+  border: 1px solid var(--chain-border);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 0 20px var(--chain-glow);
+}

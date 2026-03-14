@@ -1,0 +1,181 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.section {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.section h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.refreshBtn {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.refreshBtn:hover {
+  background: var(--border);
+}
+
+.empty {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.list {
+  list-style: none;
+}
+
+.card {
+  padding: 1rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.btnGrant {
+  background: var(--accent);
+  color: white;
+}
+
+.btnGrant:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.btnDeny {
+  background: transparent;
+  color: var(--danger);
+  border: 1px solid var(--danger);
+}
+
+.btnDeny:hover:not(:disabled) {
+  background: rgba(248, 81, 73, 0.1);
+}
+
+.historyList {
+  list-style: none;
+}
+
+.historyItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.historyItem:last-child {
+  border-bottom: none;
+}
+
+.statusGranted {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.statusDenied {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.statusPending {
+  color: var(--warning);
+  font-weight: 600;
+}
+
+.myDataList {
+  list-style: none;
+}
+
+.myDataCard {
+  margin-bottom: 1rem;
+}
+
+.myDataCardInner {
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.myDataCardInner .badge-vault {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.myDataFields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.myDataField {
+  font-size: 0.9rem;
+}
+
+.myDataField .fieldLabel {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.25rem;
+}
+
+.myDataContent {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.5;
+}
