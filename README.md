@@ -11,6 +11,27 @@ npm run dev
 
 Acesse `http://localhost:5173`.
 
+## Publicar no GitHub Pages
+
+1. Crie um repositório no GitHub e envie o código (ou use um existente).
+
+2. Se o nome do repositório **não** for `blockchain`, edite `vite.config.js` e troque `'blockchain'` pela string após o `||` na linha do `repoName`:
+   ```js
+   const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] || 'seu-repo-name'
+   ```
+
+3. Instale as dependências e faça o deploy:
+   ```bash
+   npm install
+   npm run deploy
+   ```
+
+4. No GitHub: **Settings → Pages** → em "Source" escolha o branch **gh-pages** e a pasta **/ (root)**. Salve.
+
+5. O site ficará em `https://<seu-usuario>.github.io/<nome-do-repo>/`.
+
+O script `deploy` gera o build, copia `index.html` para `404.html` (para as rotas do SPA funcionarem ao abrir links diretos) e publica a pasta `dist` no branch `gh-pages`.
+
 ## Fluxo do protótipo
 
 1. **Login**: use qualquer e-mail e escolha "Profissional de saúde" ou "Paciente".

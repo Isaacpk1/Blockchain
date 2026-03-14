@@ -5,9 +5,12 @@ import App from './App'
 import { AppProvider } from './context/AppContext'
 import './index.css'
 
+// basename para funcionar no GitHub Pages (ex.: /blockchain/)
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <AppProvider>
         <App />
       </AppProvider>
